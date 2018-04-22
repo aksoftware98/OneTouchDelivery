@@ -440,6 +440,38 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/my.js"></script>
+    <script>
+            // start rating 
+    /* Javascript */
+     
+    $(function () {
+    
+        var value = $("#rateYo").data("value");
+        $("#rateYo").rateYo({
+          rating: value,
+          readOnly: true
+         
+        });
+        var value2 = $("#rateYo2").data("value");
+        $("#rateYo2").rateYo({
+          rating: value2,
+          readOnly: true
+         
+        });
+        var value3 = $("#rateYo3").data("value");
+        $("#rateYo3").rateYo({
+          rating: value3,
+          readOnly: true
+         
+        });
+        var value4 = $("#rateYo4").data("value");
+        $("#rateYo4").rateYo({
+          rating: value4,
+          readOnly: true
+         
+        });
+      });
+        </script>
 </body>
 
 </html>

@@ -1,8 +1,9 @@
+* {
+    font-family: 'Segoe UI' ;
+}
 body {
     margin: 0 !important;
     padding: 0 !important;
-
-    // Hello
 }
 .social-media {
     position: fixed;
@@ -758,7 +759,6 @@ color: #4b77ad;
 }
 .offers-card {
     text-align: center;
-    padding: 50px;
     background-color: #8a89891c;
     text-transform: capitalize;
 
@@ -798,7 +798,6 @@ color: #4b77ad;
 }
 .main-menu-section{
     position: relative;
-    padding: 50px;
 }
 .main-menu-section .col-md-6 {
     padding-right: 0;
@@ -838,7 +837,7 @@ color: #4b77ad;
 }
 .main-menu-section .content:hover .overlay-2 {
         top: 0;
-        color: #4b77ad;
+        color: #fff;
 }
 
 .main-menu-section .content:hover img {
@@ -870,4 +869,147 @@ color: #4b77ad;
 .main-menu-section .content .blue {
     background: #4b77ad;
     color: #fff;
+}
+.resturant-info {
+    background-color: #8a89891c;
+    padding: 50px;
+}
+
+.resturant-info #map {
+    height: 100%;
+}
+.resturant-info .content {
+    padding: 25px;
+}
+.resturant-info .content .info h2 {
+    color: #4b77ad;
+    margin-bottom: 20px;
+}
+.resturant-info .content .info h4 {
+    font-weight: 100;
+    margin-bottom: 16px;
+}
+.resturant-info .content .info h4 a {
+    text-decoration: none;
+    color: #000;
+}
+.resturant-info .content .info h4 span {
+    padding-right: 15px;
+    color: #4b77ad;
+}
+.resturant-info .content .info .social {
+    margin-top: 20px;
+}
+.resturant-info .content .info .social a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 15px;
+}
+.resturant-info .content .info .social a i {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    transition: all ease-in-out .3s;
+}
+.resturant-info .content .info .social a .fa-facebook:hover {
+    background: #3b5999;
+    color: #fff;
+    border: 1px solid #3b5999;
+}
+.resturant-info .content .info .social a .fa-twitter:hover {
+    background: #55acee;
+    color: #fff;
+    border: 1px solid #55acee;
+}
+.resturant-info .content .info .social a .fa-instagram:hover {
+    background: #e4405f;
+    color: #fff;
+    border: 1px solid #e4405f;
+}
+.resturant-info .content .info .social a .fa-youtube:hover {
+    background: #cd201f;
+    color: #fff;
+    border: 1px solid #cd201f;
+}
+
+.reviw-resturant {
+
+}
+.reviw-resturant .main {
+    font-size: 200px;
+} 
+.reviw-resturant .rateYo {
+    margin: -55px auto 20px auto;
+    padding: 10px;
+
+}
+.reviw-resturant .progress-cont {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.progress-star .row  {
+    margin:20px ;
+}
+.progress-star .row:first-child {
+
+}
+.progress-star p {
+    margin: 0;
+    margin-top: -5px;
+
+}
+.progress-star i {
+    margin: 0 10px;
+}
+.review-comment {
+    padding: 50px 10px;
+}
+.review-comment h2 {
+    margin-bottom: 20px;
+}
+.review-comment p {
+    margin: 1px;
+}
+.review-comment .rateYo {
+
+    padding: 10px 0px;
+
+}
+.overlay-pop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 333;
+    display: none;
+}
+.popUp {
+    width: 500px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 334;
+}
+.popUp button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.popUp span {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
 }
