@@ -1013,3 +1013,41 @@ color: #4b77ad;
     top: 20px;
     cursor: pointer;
 }
+
+.subscribe {
+
+}
+.subscribe .img-cont {
+    margin-top: 80px
+}
+.subscribe .img-cont img {
+    width: 100%;
+    
+}
+.subscribe .alert {
+    background: #4b77ad;
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.form- {
+    padding: 50px;
+}
+.form- .form-cont {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #21252936;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.form- .larg {
+    width: 100%;
+    background: #4b77ad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    cursor: pointer;
+}

@@ -3,7 +3,8 @@
     $(window).scroll(function() {
 
       if($(this).scrollTop() > 100) { 
-          $(".navbar").addClass("solid")
+          $(".navbar").addClass("solid");
+          
       } else {
           $(".navbar").removeClass("solid");
       }
@@ -33,6 +34,6 @@
       $('.overlay-pop').fadeOut(1000);
 
     })
-
+    
 });
 
