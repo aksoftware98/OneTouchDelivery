@@ -331,11 +331,25 @@
 
 
             </div>
-            <a href="#">
-                <button class="custom-btn-lg">
-                    load more
-                </button>
-            </a>
+            <div class="num-container">
+                <a href="#">
+                    <button style="margin-top: 50px;" class="btn- active">
+                        1
+                    </button>
+                </a>
+                <a href="#">
+                    <button style="margin-top: 50px;" class="btn-">
+                        2
+                    </button>
+                </a>
+                <a href="#">
+                    <button style="margin-top: 50px;" class="btn-">
+                        3
+                    </button>
+                </a>
+
+            </div>
+            
 
         </div>
     </section>
@@ -439,13 +453,21 @@
     <script src="js/jquery.nicescroll.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/my.js"></script>
+    
     <script>
             // start rating 
     /* Javascript */
      
     $(function () {
+        $(window).scroll(function() {
+
+if($(this).scrollTop() > 100) { 
+    $(".navbar").addClass("solid");
     
+} else {
+    $(".navbar").removeClass("solid");
+}
+});
         var value = $("#rateYo").data("value");
         $("#rateYo").rateYo({
           rating: value,

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.css" />
+    <link rel="stylesheet" href="css/datatables.min.css">
+    <link rel="stylesheet" href="css/my.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>One Click</title>
+</head>
+
+<body>
+
+    <!-- start social media icon -->
+    <div class="social-media">
+
+        <div class="icon">
+            <div class="content">
+                <a href="#">
+                    <i class="fa fa-facebook"></i>
+                </a>
+
+            </div>
+        </div>
+        <div class="icon">
+            <div class="content">
+                <a href="#">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <div class="icon">
+            <div class="content">
+                <a href="#">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="icon">
+            <div class="content">
+                <a href="#">
+                    <i class="fa fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end social media icone -->
+    <!-- start navbar -->
+
+    <nav class="navbar solid fixed-top navbar-expand-lg navbar-light bg-light ">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="resturants.html">Resturant
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="offers.html">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="app.html">App</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login / Register</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-shopping-basket"></i>
+                            <span class="badge badge-light">
+                                <i>9</i>
+                            </span>
+                        </a>
+                    </li>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <i class="fa fa-user"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">My Profile</a>
+                            <a class="dropdown-item" href="#">My Order</a>
+                            <a class="dropdown-item" href="#">Log Off</a>
+                        </div>
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- end navbar -->
+
+    <!-- start profile  -->
+
+    <section class="profile">
+        <div class="container">
+            <div class="row">
+                    <div class="overlay-pop">
+                            <div class="popUp">
+                                    <span class="close"><i class="fa fa-lg fa-times-circle"></i></span>
+                                    <h2>Write a review</h2>
+                                        <form>
+                                                <div class="form-group">
+                                                  <label for="formGroupExampleInput">Name</label>
+                                                  <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="formGroupExampleInput2">Phone</label>
+                                                  <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                        <label for="formGroupExampleInput2">E-mail</label>
+                                                        <input type="email" class="form-control" placeholder="">
+                                                      </div>
+                                                      <button class="custom-btn-lg" id="closePopUp" type="submit">
+                                                            submit
+                                                        </button>
+                                              </form>
+                                </div>
+                            </div>
+
+                <div class="content col-md-4">
+                    <div class="avatar-upload">
+                        <div class="avatar-edit">
+                            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                            <label for="imageUpload"></label>
+                        </div>
+                        <div class="avatar-preview">
+                            <div id="imagePreview" style="background-image: url(image/upload.png);">
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="info">
+                        <p>
+                            <span>Name :</span>Mohammad khoulani</p>
+                        <p>
+                            <span>Phone :</span>+961 78 920 212</p>
+                        <p>
+                            <span>E-Mail :</span>mhmmdkholani@gmail.com</p>
+                    </div>
+                    <button class="custom-btn" id="popUp">
+                        Change my info
+                    </button>
+                </div>
+                <div class="table col-md-8">
+                    <table id="example" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Quantity</th>
+                                <th>Order date</th>
+                                <th>Price</th>
+                                <th>Total price</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                <td>Pizza</td>
+                                <td>Fast food</td>
+                                <td>5</td>
+                                <td>25</td>
+                                <td>225</td>
+                                <td>2011/04/25</td>
+                            </tr>
+                            <tr>
+                                    <td>Pizza</td>
+                                    <td>Fast food</td>
+                                    <td>5</td>
+                                    <td>25</td>
+                                    <td>225</td>
+                                    <td>2011/04/25</td>
+                                </tr>
+                                <tr>
+                                        <td>Pizza</td>
+                                        <td>Fast food</td>
+                                        <td>5</td>
+                                        <td>25</td>
+                                        <td>225</td>
+                                        <td>2011/04/25</td>
+                                    </tr>
+                                    <tr>
+                                            <td>Pizza</td>
+                                            <td>Fast food</td>
+                                            <td>5</td>
+                                            <td>25</td>
+                                            <td>225</td>
+                                            <td>2011/04/25</td>
+                                        </tr>
+                            <tr>
+                                <td>Pizza</td>
+                                <td>Fast food</td>
+                                <td>5</td>
+                                <td>25</td>
+                                <td>225</td>
+                                <td>2011/04/25</td>
+                            </tr>
+                            <tr>
+                                <td>Pizza</td>
+                                <td>Fast food</td>
+                                <td>5</td>
+                                <td>25</td>
+                                <td>225</td>
+                                <td>2011/04/25</td>
+                            </tr>
+                            <tr>
+                                <td>Pizza</td>
+                                <td>Fast food</td>
+                                <td>5</td>
+                                <td>25</td>
+                                <td>225</td>
+                                <td>2011/04/25</td>
+                            </tr>
+                            <tr>
+                                <td>Pizza</td>
+                                <td>Fast food</td>
+                                <td>5</td>
+                                <td>25</td>
+                                <td>225</td>
+                                <td>2011/04/25</td>
+                            </tr>
+                            <tr>
+                                <td>Pizza</td>
+                                <td>Fast food</td>
+                                <td>5</td>
+                                <td>25</td>
+                                <td>225</td>
+                                <td>2011/04/25</td>
+                            </tr>
+                            <tr>
+                                    <td>Pizza</td>
+                                    <td>Fast food</td>
+                                    <td>5</td>
+                                    <td>25</td>
+                                    <td>225</td>
+                                    <td>2011/04/25</td>
+                                </tr>
+                                <tr>
+                                        <td>Pizza</td>
+                                        <td>Fast food</td>
+                                        <td>5</td>
+                                        <td>25</td>
+                                        <td>225</td>
+                                        <td>2011/04/25</td>
+                                    </tr>
+                                    <tr>
+                                            <td>Pizza</td>
+                                            <td>Fast food</td>
+                                            <td>5</td>
+                                            <td>25</td>
+                                            <td>225</td>
+                                            <td>2011/04/25</td>
+                                        </tr>
+                    </table>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- end profile -->
+
+    <!-- start footer  -->
+
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-1">
+                <div class="footer-link">
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="footer-link">
+                    <a href="#">contact us</a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="footer-link">
+                    <a href="#">about</a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="footer-link">
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="footer-link">
+                    <a href="#">Previce</a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="footer-link">
+                    <a href="#">AK software</a>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="footer-link">
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-logo">
+                        <img src="image/ak.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="app-logo">
+                        <a href="#">
+                            <img src="image/microsoft.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="image/appstore.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="image/googleplay.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            <span>
+                                <i class="fa fa-map-marker"></i>
+                            </span>beqa`a lebanon</p>
+                        <p>
+                            <span>
+                                <i class="fa fa-phone"></i>
+                            </span>+961 78 920 212</p>
+                        <p>
+                            <span>
+                                <i class="fa fa-envelope"></i>
+                            </span>MhmmdKholani@gmail.com</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2017 AK Software. All rights reserved.</p>
+        </div>
+    </div>
+    <!-- end footer -->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-scroll.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.rateyo.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/datatables.min.js"></script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function () {
+            readURL(this);
+        });
+        $(document).ready(function() {
+            $('#popUp').click(function () {
+      $('.overlay-pop').fadeIn(1000);
+
+    });
+    $('.popUp .close, #closePopUp').click(function() {
+      $('.overlay-pop').fadeOut(1000);
+
+    });
+    $('#example').DataTable();
+    
+    //profile photo
+            function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function () {
+            readURL(this);
+        });
+} );
+    </script>
+
+</body>
+
+</html>
